@@ -79,7 +79,7 @@ export class News extends Component {
                         {this.state.loading && <Spinner />}
                         {!this.state.loading && this.state.articles.map((article) => {
                             return <div className="col d-flex justify-content-center">
-                                <NewItem imageUrl={article.urlToImage} title={article.title ? article.title.slice(0, 40) : ""} description={article.description ? article.description.slice(0, 80) : ""} url={article.url} />
+                                <NewItem imageUrl={article.urlToImage} title={article.title ? article.title.slice(0, 40) : ""} description={article.description ? article.description.slice(0, 80) : ""} url={article.url} author={article.author} date={article.publishedAt} source={article.source.name} />
                             </div>
                         })}
 
