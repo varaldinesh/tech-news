@@ -5,7 +5,7 @@ export class NewItem extends Component {
         let { title, description, imageUrl, url, author, date, source } = this.props;
         return (
             <div className="my-5">
-                <div className="card" style={{ width: '19rem' }}>
+                <div className="card" style={{ width: 'auto' }}>
                     <img src={!imageUrl ? "https://www.kaspersky.com/content/en-global/images/repository/isc/2022/what-is-an-nft-2.jpg" : imageUrl} className="card-img-top" alt="..." height={'150px'} />
                     <div className="card-body">
                         <h5 className="card-title">{title}<span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ left: '80%', zIndex: '1' }}>
